@@ -14,38 +14,7 @@ require '../includes/connect.php';
       crossorigin="anonymous"
     >
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <style>
-      body {
-        background-color: #f8f9fa; /* Fundo claro */
-      }
-      .card {
-        border: none;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        border-radius: 10px;
-      }
-      .card-header {
-        background-color: #343a40;
-        color: #fff;
-        border-radius: 10px 10px 0 0;
-      }
-      .card-body {
-        padding: 30px;
-      }
-      .form-control {
-        border: none;
-        background-color: #f8f9fa;
-        font-weight: bold;
-      }
-      .btn-warning {
-        background-color: #ffc107;
-        border: none;
-        transition: all 0.3s ease;
-      }
-      .btn-warning:hover {
-        background-color: #e0a800;
-      }
-    </style>
+    <link rel="stylesheet" href="../assets/css/view_user.css">
   </head>
   <body>
   
@@ -87,7 +56,7 @@ require '../includes/connect.php';
               <div class="row mb-3">
                 <label class="col-sm-4 col-form-label">Senha:</label>
                 <div class="col-sm-8">
-                  <p class="form-control">Protegida Por Segurança de Todos!</p>
+                  <p class="form-control">Protegida por criptografia</p>
                 </div>
               </div>
               <?php

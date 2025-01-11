@@ -30,7 +30,6 @@ footer img {
   height: 40px;
 }
 
-/* Variáveis de cores */
 :root {
   --primary-blue: #0d6efd;
   --success-green: #198754;
@@ -148,7 +147,6 @@ footer img {
 
 /* Create_use */
 
-/* Estilos para o formulário */
 .form-card {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08);
   border: none;
