@@ -18,7 +18,7 @@ require '../includes/connect.php';
   </head>
   <body>
   
-    <?php include('./includes/navbar.php'); ?>
+    <?php include('../includes/navbar.php'); ?>
    
     <div class="container mt-5">
       <div class="row">
@@ -69,7 +69,7 @@ require '../includes/connect.php';
         </div>
       </div>
     </div>
-    <?php include('./includes/footer.php'); ?> 
+    <?php include('../includes/footer.php'); ?> 
 
     <!-- Scripts -->
     <script 
