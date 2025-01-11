@@ -48,10 +48,10 @@ require '../includes/connect.php';
                       <td><?=$usuario['email']?></td>
                       <td>Protegida Por Segurança de Todos!</td>
                       <td>
-                        <a href="usuario-view.php?id=<?=$usuario['id']?>" class="btn btn-secondary btn-sm">Visualizar</a>
-                        <a href="usuario-edit.php?id=<?=$usuario['id']?>" class="btn btn-success btn-sm">Editar</a>
-                        <form action="acoes.php" method="POST" class="d-inline">
-                          <button onclick="return confirm('Realmente Deseja Excluir esse Usuário?')" type="submit" name="delete_usuario" value="<?=$usuario['id']?>" class="btn btn-danger btn-sm">
+                        <a href="view_user.php?id=<?=$usuario['id']?>" class="btn btn-secondary btn-sm">Visualizar</a>
+                        <a href="edit_user.php?id=<?=$usuario['id']?>" class="btn btn-success btn-sm">Editar</a>
+                        <form action="../actions/actions.php" method="POST" class="d-inline">
+                          <button onclick="return confirm('Realmente Deseja Excluir esse Usuário?')" type="submit" name="delete_user" value="<?=$usuario['id']?>" class="btn btn-danger btn-sm">
                             Excluir
                           </button>
                         </form>

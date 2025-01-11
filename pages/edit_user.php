@@ -40,7 +40,7 @@ require '../includes/connect.php';
                         $usuario = mysqli_fetch_array($query);
                     
                 ?>
-              <form action="acoes.php" method="POST">
+              <form action="../actions/actions.php" method="POST">
                 <input type="hidden" name="usuario_id" value="<?=$usuario['id']?>">
                 <div class="mb-3">
                     <label>Nome</label>

@@ -80,8 +80,8 @@ if (isset($_POST['edit_user'])) {
 }
 
 // Excluir usuário
-if (isset($_POST['delete_usuario'])){
-    $usuario_id = mysqli_real_escape_string($conexao, $_POST['delete_usuario']);
+if (isset($_POST['delete_user'])){
+    $usuario_id = mysqli_real_escape_string($conexao, $_POST['delete_user']);
     
     $sql = "DELETE FROM usuarios WHERE id = '$usuario_id'";
     
