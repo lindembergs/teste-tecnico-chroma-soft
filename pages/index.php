@@ -39,8 +39,8 @@ require '../includes/connect.php';
                             <i class="fas fa-search"></i>
                             <input type="text" 
                                    id="searchInput" 
-                                   class="form-control search-input" 
-                                   placeholder="Buscar usuários..."
+                                   class="form-control search-input ps-10" 
+                                   placeholder="  Buscar usuários..."
                                    onkeyup="filterTable()">
                         </div>
                         

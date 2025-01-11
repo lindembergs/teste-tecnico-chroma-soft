@@ -6,7 +6,7 @@ require '../includes/connect.php';
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Usuário Visualizar</title>
+    <title>Visualizar Usuário</title>
     <link 
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
       rel="stylesheet" 
@@ -14,21 +14,52 @@ require '../includes/connect.php';
       crossorigin="anonymous"
     >
     <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+      body {
+        background-color: #f8f9fa; /* Fundo claro */
+      }
+      .card {
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+      .card-header {
+        background-color: #343a40;
+        color: #fff;
+        border-radius: 10px 10px 0 0;
+      }
+      .card-body {
+        padding: 30px;
+      }
+      .form-control {
+        border: none;
+        background-color: #f8f9fa;
+        font-weight: bold;
+      }
+      .btn-warning {
+        background-color: #ffc107;
+        border: none;
+        transition: all 0.3s ease;
+      }
+      .btn-warning:hover {
+        background-color: #e0a800;
+      }
+    </style>
   </head>
   <body>
   
     <?php include('../includes/navbar.php'); ?>
    
     <div class="container mt-5">
-      <div class="row">
-        <div class="col-md-12">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
           <div class="card">
-            <div class="card-header">
-              <h4>Visualizar usuário</h4>
-              <a href="index.php" class="btn btn-warning float-end">Voltar</a>
+            <div class="card-header d-flex justify-content-between align-items-center">
+              <h4 class="mb-0">Visualizar Usuário</h4>
+              <a href="index.php" class="btn btn-warning">Voltar</a>
             </div>
             <div class="card-body">
-            <?php
+              <?php
                 if (isset($_GET['id'])){
                     $usuario_id = mysqli_real_escape_string($conexao, $_GET['id']);
                     $sql = "SELECT * FROM usuarios WHERE id='$usuario_id'";
@@ -36,36 +67,37 @@ require '../includes/connect.php';
 
                     if(mysqli_num_rows($query) > 0){
                         $usuario = mysqli_fetch_array($query);
-            ?>
-                <div class="mb-3">
-                    <label>Nome</label>
-                    <p class="form-control">
-                        <?=$usuario['nome'];?>
-                    </p>
+              ?>
+              <div class="row mb-3">
+                <label class="col-sm-4 col-form-label">Nome:</label>
+                <div class="col-sm-8">
+                  <p class="form-control"><?=$usuario['nome'];?></p>
                 </div>
-                <div class="mb-3">
-                    <label>Email</label>
-                    <p class="form-control">
-                    <?=$usuario['email'];?>
-                    </p>
+              </div>
+              <div class="row mb-3">
+                <label class="col-sm-4 col-form-label">Email:</label>
+                <div class="col-sm-8">
+                  <p class="form-control"><?=$usuario['email'];?></p>
                 </div>
-                <div class="mb-3">
-                    <label>Senha</label>
-                    <p class="form-control">
-                    Protegida Por Segurança de Todos!
-                    </p>
+              </div>
+              <div class="row mb-3">
+                <label class="col-sm-4 col-form-label">Senha:</label>
+                <div class="col-sm-8">
+                  <p class="form-control">Protegida Por Segurança de Todos!</p>
                 </div>
-                <?php
+              </div>
+              <?php
                 } else {
-                    echo "<h5>Usuário Não Encontrado!</h5>";
+                    echo "<h5 class='text-center'>Usuário Não Encontrado!</h5>";
                 }
-            }
-            ?>
+              }
+              ?>
             </div>
           </div>
         </div>
       </div>
     </div>
+
     <?php include('../includes/footer.php'); ?> 
 
     <script 
