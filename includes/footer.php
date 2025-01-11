@@ -1,7 +1,7 @@
 <footer>
     <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
-            <a href="#" class="navbar-brand mx-auto">- Chromasoft</a>
+            <img class="navbar-brand mx-auto" src="../assets/img/logo.png" alt="logo da chromasoft" >
         </div>
     </nav>
 </footer>
