@@ -34,7 +34,7 @@ require '../includes/connect.php';
                     </div>
                     
                     <div class="card-body">
-                        <!-- Barra de busca -->
+            
                         <div class="search-wrapper mb-4">
                             <i class="fas fa-search"></i>
                             <input type="text" 
