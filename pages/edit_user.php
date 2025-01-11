@@ -9,10 +9,12 @@ require '../includes/connect.php';
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Usuário - Editar</title>
     <link 
+    
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
         rel="stylesheet" 
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
         crossorigin="anonymous">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
@@ -24,7 +26,10 @@ require '../includes/connect.php';
                 <div class="card shadow-sm">
                     <div class="card-header d-flex justify-content-between align-items-center">
                         <h4 class="mb-0">Editar Usuário</h4>
-                        <a href="index.php" class="btn btn-warning">Voltar</a>
+                        <a href="index.php" class="btn btn-back">
+                                <i class="fas fa-arrow-left"></i>
+                                Voltar
+                            </a>
                     </div>
                     <div class="card-body">
                         <?php
