@@ -109,7 +109,8 @@ require '../includes/connect.php';
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-    // Validação do formulário
+   
+
     const form = document.getElementById('createUserForm');
     const submitBtn = document.getElementById('submitBtn');
 
@@ -139,7 +140,6 @@ require '../includes/connect.php';
         }
     }
 
-    // Validação em tempo real do email
     const emailInput = document.getElementById('email');
     emailInput.addEventListener('input', function() {
         if (emailInput.validity.valid) {
