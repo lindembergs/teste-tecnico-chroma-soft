@@ -15,6 +15,7 @@ require '../includes/connect.php';
     >
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/view_user.css">
+    <link rel="stylesheet" href="../assets/css/global.css">
   </head>
   <body>
   
