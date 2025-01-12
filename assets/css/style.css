@@ -1,17 +1,3 @@
-html,
-body {
-  margin: 0;
-  font-family: sans-serif;
-  background-image: url("../img/background.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
 .header img {
   width: 250px;
   height: 50px;
