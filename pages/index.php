@@ -41,7 +41,7 @@ require '../includes/connect.php';
                             <input type="text" 
                                    id="searchInput" 
                                    class="form-control search-input ps-10" 
-                                   placeholder="  Buscar usuários..."
+                                   placeholder="Buscar usuários..."
                                    onkeyup="filterTable()">
                         </div>
                         
