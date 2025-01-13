@@ -27,7 +27,7 @@ require '../includes/connect.php';
           <div class="card">
             <div class="card-header d-flex justify-content-between align-items-center">
               <h4 class="mb-0">Visualizar Usuário</h4>
-              <a href="index.php" class="btn btn-back">
+              <a href="index.php" class="btn btn-back bg-primary text-white">
                                 <i class="fas fa-arrow-left"></i>
                                 Voltar
                             </a>
