@@ -1,13 +1,14 @@
 <?php
-    if (isset($_SESSION['mensagem'])):
+if (isset($_SESSION['mensagem'])):
+    $mensagem = $_SESSION['mensagem'];
+    $tipo = $_SESSION['tipo'] ?? 'success'; // success, error, warning, info
+    unset($_SESSION['mensagem'], $_SESSION['tipo']);
 ?>
-
-<div class="alert alert-warning alert-dismissible fade show" role="alert">
-    <?= $_SESSION['mensagem']; ?>
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+<div id="toast-data" 
+     data-message="<?= htmlspecialchars($mensagem, ENT_QUOTES, 'UTF-8'); ?>" 
+     data-type="<?= htmlspecialchars($tipo, ENT_QUOTES, 'UTF-8'); ?>">
 </div>
-
+<script src="../assets/js/message.js"></script>
 <?php
-    unset($_SESSION['mensagem']);
-    endif;
+endif;
 ?>
