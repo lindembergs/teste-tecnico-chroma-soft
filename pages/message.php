@@ -1,7 +1,7 @@
 <?php
 if (isset($_SESSION['mensagem'])):
     $mensagem = $_SESSION['mensagem'];
-    $tipo = $_SESSION['tipo'] ?? 'success'; // success, error, warning, info
+    $tipo = $_SESSION['tipo'] ?? 'success';
     unset($_SESSION['mensagem'], $_SESSION['tipo']);
 ?>
 <div id="toast-data" 
