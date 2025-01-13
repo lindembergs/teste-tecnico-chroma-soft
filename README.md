@@ -1,4 +1,4 @@
-# teste-tecnico-chroma-soft: Projeto Usuários
+# teste_tecnico_chromasoft: Projeto Usuários
 
 Este é um projeto simples de cadastro de usuários com funcionalidades de criar, atualizar e excluir usuários, utilizando PHP , MySQL E JS.
 Após fazer donlowad do arquivo e descompactar siga esses passos ->
